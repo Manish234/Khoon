@@ -85,13 +85,14 @@ public class search extends AppCompatActivity {
 
         progressBar.setVisibility(View.VISIBLE);
         loading.setVisibility(View.VISIBLE);
-        if (internet_connection()) {
+        if (internet_connection() && search_area.isEmpty() == false) {
             fetchDoners process = new fetchDoners();
             process.execute();
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"No Internet Connection !!",Toast.LENGTH_LONG).show();
+            progressBar.setVisibility(View.INVISIBLE);
+            Toast.makeText(getApplicationContext(),"No Internet Connection or write something in the text area !!",Toast.LENGTH_LONG).show();
         }
     }
 }
