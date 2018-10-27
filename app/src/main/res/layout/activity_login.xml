@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/donateblood" />
+        app:srcCompat="@drawable/searchblood" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -34,6 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/searchblood" />
+        app:srcCompat="@drawable/donateblood" />
 
 </android.support.constraint.ConstraintLayout>
